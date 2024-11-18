@@ -25,7 +25,7 @@ const BrowserBookFulldata = () => {
                         <img
                             src={book.image}
                             alt={book.title}
-                            className='object-fill w-full h-32 rounded-xl'
+                            className='object-contain w-full h-96 rounded-xl'
                         />
 
                         <p className='text-center text-3xl font-bold text-red-400'> <span className="text-blue-400">Title </span>:  {book.title}</p>

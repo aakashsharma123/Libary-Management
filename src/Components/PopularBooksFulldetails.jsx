@@ -17,7 +17,7 @@ const PopularBooksFulldetails = () => {
             {filterPopularBook.length > 0 ? (
                 filterPopularBook.map((popularBook) => (
                     <div className='border-none shadow-lg shadow-fuchsia-900 rounded mt-9 w-full scale-90 hover:scale-95 transition-all duration-100'  >
-                        <img src={popularBook.image} className='relative w-full h-48' alt={popularBook.title} />
+                        <img src={popularBook.image} className='object-contain w-full h-96 ' alt={popularBook.title} />
                         <p className='text-center text-3xl font-bold text-red-400'> <span className='text-blue-400'>Title : </span>{popularBook.title}</p>
                         <p className='text-center text-2xl font-bold text-yellow-100'><span className='text-blue-400'>Author : </span>{popularBook.author}</p>
                         <p className='text-center text-2xl font-bold text-white'><span className='text-blue-400'>Description :</span>{popularBook.description}</p>

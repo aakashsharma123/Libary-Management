@@ -33,13 +33,13 @@ const AddBook = () => {
     const validateForm = () => {
         const formErrors = {};
 
-        if (!title) formErrors.title = "Fill title correctly";
-        if (!author) formErrors.author = "Fill author correctly";
-        if (!category) formErrors.category = "Fill category correctly";
-        if (!description) formErrors.description = "Fill description correctly";
-        if (!image) formErrors.image = "Fill image URL correctly";
-        if (!moreinfo) formErrors.moreinfo = "Fill more info correctly";
-        if (rating < 1 || rating > 5) formErrors.rating = "Rating must be between 1 and 5";
+        if (!newBook.title) formErrors.title = "Fill title correctly";
+        if (!newBook.author) formErrors.author = "Fill author correctly";
+        if (!newBook.category) formErrors.category = "Fill category correctly";
+        if (!newBook.description) formErrors.description = "Fill description correctly";
+        if (!newBook.image) formErrors.image = "Fill image URL correctly";
+        if (!newBook.moreinfo) formErrors.moreinfo = "Fill more info correctly";
+        if (newBook.rating < 1 || rating > 5) formErrors.rating = "Rating must be between 1 and 5";
 
         return formErrors.keys
     };
@@ -51,6 +51,10 @@ const AddBook = () => {
 
         if (validationErrors) {
             return setErrors(validationErrors);
+        }
+
+        if (newBook.rating < 1 || rating > 5) {
+            return alert ("enter 1 to 5 only")
         }
 
         dispatch(addBook(newBook));

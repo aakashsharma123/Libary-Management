@@ -53,7 +53,7 @@ const BrowserBook = () => {
                     filterBooks.map((book) => (
                         <NavLink key={book.id} to={`/Book/${book.id}`}>
                             <div className='border-none shadow-lg shadow-fuchsia-900 rounded mt-9 w-full hover:scale-95'>
-                                <img src={book.image} className='object-fill w-full h-32 rounded-xl' alt={book.title} />
+                                <img src={book.image} className='object-contain w-full h-96 rounded-xl' alt={book.title} />
                                 <p className='text-center text-3xl font-bold text-red-400'>{book.title}</p>
                                 <p className='text-center text-2xl font-bold text-yellow-100'>{book.author}</p>
                                 <p className='text-center text-2xl font-bold text-white'>{book.description}</p>

@@ -19,7 +19,7 @@ const GenreBooks = () => {
         {filterBooks.length > 0 ? (
           filterBooks.map((each) => (
             <div key={each.id} className='border-2 border-fuchsia-950  w-full mt-10 mx-auto rounded shadow-lg shadow-fuchsia-950 hover:scale-95 ' >
-              <img className='rounded w-full object-fill h-40' src={each.image} alt="" />
+              <img className='rounded object- w-full h-96' src={each.image} alt="" />
               <p className='text-2xl font-bold text-red-300 '>{each.title}</p>
               <p className='text-white font-bold font-serif text-2xl'>{each.description}</p>
               {/* <p className='text-3xl'>{each.year}</p> */}
