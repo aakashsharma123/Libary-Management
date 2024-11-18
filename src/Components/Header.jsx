@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
 
-            <h1 className='text-center text-3xl font-bold text-teal-50 font-serif'>Welcome To Online Libary System</h1>
+            <h1 className='text-center text-3xl font-bold text-teal-50 font-serif'>Welcome To Online Library System</h1>
             <nav className='bg-gradient-to-r from-fuchsia-950 to-fuchsia-900 rounded border-none '>
                 <ul className='list-none flex justify-center gap-5 text-white py-5'>
                     <li className='hover:font-bold hover:scale-95 transition-all duration-100 hover:text-violet-200'>
